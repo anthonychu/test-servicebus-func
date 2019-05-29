@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "name": "mySbMsg",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "topicName": "test",
+      "subscriptionName": "test",
+      "connection": "test-sb-func_SERVICEBUS"
+    },
+    {
+      "name": "file",
+      "type": "blob",
+      "direction": "in",
+      "path": "test/{id}.txt"
+    }
+  ]
+}
